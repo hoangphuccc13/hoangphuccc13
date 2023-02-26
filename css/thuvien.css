@@ -1,0 +1,349 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  box-sizing: border-box
+}
+.img-100 {width: 100%}
+.bg-primary {
+  background-color: #F3EFE0
+}
+.text-primary {
+  color: #FFFFFF;
+  font size: 90px ;
+
+}
+
+.text-title {
+  color: #FFFFFF;
+
+}
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+
+}
+.d-flex a {
+  background-color: #222222;
+  font-size: 25px;
+  padding: 8px ;
+  width:40px;
+  height: 40px;
+  border-radius: 12px;
+  text-co
+}
+
+.btn-primary {
+  background-color: #22A39F;
+  color: #F9D745;
+  border: none;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 50px;
+  width: 80px
+}
+.btn-primary:hover {
+  background-color: #222222
+}
+.bg-secondary {
+  background-color: #222222
+}
+.bg-title {background-color: #22A39F}
+
+.text-secondary {
+  color: #25262A
+}
+.btn-secondary {
+  background-color: #F3EFE0;
+  color: #22A39F;
+  border: none;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 50px;
+  width: 80px
+}
+.btn-secondary:hover {
+  background-color: #22A39F
+}
+.img-100{ width: 100%; height: auto}
+/*thu vien luoi 12 cot*/
+.col-1 {
+  width: 8.33%
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid none;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap
+}
+/*--- container tại phone--------*/
+.container {
+  width: 100%
+}
+.container-fluid {
+  width: 100%
+}
+/*--- khu vực code cho ipad 768px trở lên--------*/
+@media (min-width:768px) {
+  .container {
+    width: 720px;
+    margin: auto
+  }
+  .col-md-1 {
+    width: 8.33%
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+/*--- khu vực code cho pc 997 px trở lên--------*/
+@media (min-width:997px) {
+  .container {
+    width: 80%;
+    margin: auto
+  }
+.col-lg-1 {
+  width: 8.33%
+}
+.col-lg-2 {
+  width: 16.66%;
+}
+.col-lg-3 {
+  width: 25%;
+}
+.col-lg-4 {
+  width: 33.33%;
+}
+.col-lg-5 {
+  width: 41.66%;
+}
+.col-lg-6 {
+  width: 50%;
+}
+.col-lg-7 {
+  width: 58.33%;
+}
+.col-lg-8 {
+  width: 66.66%;
+}
+.col-lg-9 {
+  width: 75%;
+}
+.col-lg-10 {
+  width: 83.33%;
+}
+.col-lg-11 {
+  width: 91.66%;
+}
+.col-lg-12 {
+  width: 100%;
+}
+}
+/*--- flex libary---------------*/
+.justify-content-center{ justify-content: center}
+.justify-content-end{ justify-content: flex-end}
+.align-item-center{ align-items: center}
+.align-item-end{ align-items: flex-end}
+.row-reverse{ flex-direction: row-reverse}
+
+/* Set a background color */
+body {
+ 
+  font-family: Helvetica, sans-serif;
+}
+.video{
+ width: 60px;
+ height: 50px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.containerT {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.containerT::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .containerT {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .containerT::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+
